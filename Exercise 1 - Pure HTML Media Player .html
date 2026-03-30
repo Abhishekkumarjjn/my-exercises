@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms - lets learn it.</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: blueviolet; */
+            box-sizing: border-box; 
+            border: 2px solid black;
+            /* display: inline-block; */
+            width: 80vmin;
+            margin: 10vmin auto;
+            padding: 5vmin auto;
+            /* justify-content: center ; */
+        }
+        .box1{
+            /* background-color: blueviolet; */
+             /* box-sizing: border-box;  */
+            /* border: 2px solid black; */
+            display: inline-block;
+            /* width: 80vmin;
+            margin: 10vmin auto;
+            padding: 5vmin auto; */
+            justify-content: center ;
+            /* border: 2px solid blue;
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+            display: inline-flex;
+            justify-content: center; */
+        }
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="/submit" method="post">
+            <h1>
+                hello users.....
+            </h1>
+            <h2>Enter your credentials for enter in the website.</h2>
+            <div class="box1">
+                <label for="Name">Enter Your Name:-</label>
+                <input type="text" name="Name" id="Name" autofocus required>
+            </div>
+            <div class="box1">
+                <label for="father's name">Enter your Father's name:-</label>
+                <input type="text" name="father's name" id="father's name" required>
+            </div>
+            <div class="box1">
+                <label for="dob">Enter your D.O.B.=</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="box1">
+                <label>Select your gender :- </label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">female</label>
+            </div>
+            <div class="box1">
+                <label for="number">Enter your mobile no. = </label>
+                <input type="number" name="number" id="number" required>
+            </div>
+            <div class="box1">
+                <label>Select your exam city-</label>
+                <select name="exam city" id="exam city" placeholder="Select your exam city.">
+                    <option >Select Your exam city</option>
+                    <option value="Chhattisgarh (Capital: Raipur)">Chhattisgarh (Capital: Raipur)</option>
+                    <option value="Maharashtra (Capital: Mumbai)">Maharashtra (Capital: Mumbai)</option>
+                    <option value="Rajasthan (Capital: Jaipur)">Rajasthan (Capital: Jaipur)</option>
+                    <option value="Uttar Pradesh (Capital: Lucknow)">Uttar Pradesh (Capital: Lucknow)</option>
+                    <option value="Himachal Pradesh (Capital: Shimla)">Himachal Pradesh (Capital: Shimla)</option>
+                </select>
+            </div>
+            <div class="box1">
+                <label for="username">username:- </label>
+                <input type="text" name="username" id="username" placeholder="enter your username" required>
+                <br>
+                <label for="password">Enter your password</label>
+                <input type="password" name="password" id="password" required>
+            </div >
+            <div class="box1">
+                <input type="checkbox" name="chechmark" id="chechmark" required>
+                <q>Hereby you agree our all the terms & conditions</q>
+                <br>
+                <label for="terms">for terms and conditions-</label>
+                <a href="https://www.google.com/" target="_blank">click here</a>
+            </div>
+            <div class="box1">   
+                <input type="submit" value="submit">
+                <input type="reset" value="clear all">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
